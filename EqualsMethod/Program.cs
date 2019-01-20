@@ -20,6 +20,26 @@ namespace EqualsMethod
 
             Console.WriteLine(P1 == P2);
             Console.WriteLine(P1.Equals(P2));
+
+            Console.WriteLine("hashcode p1: " + P1.GetHashCode());
+            Console.WriteLine("hashcode p2: "+ P2.GetHashCode());
+
+            People P3 = new People();
+            P3.FirstName = "Dan";
+            P3.LastName = "Borisov";
+            Console.WriteLine("hashcode p3: " + P3.GetHashCode());
+
+            People P4 = new People();
+            P4.FirstName = "A";
+            P4.LastName = "C";
+            Console.WriteLine("hashcode P4: " + P4.GetHashCode());
+
+            People P5 = new People();
+            P5.FirstName = "AB";
+            P5.LastName = "BC";
+            Console.WriteLine("hashcode P5: " + P5.GetHashCode());
+
+
             Console.ReadLine();
         }
     }
