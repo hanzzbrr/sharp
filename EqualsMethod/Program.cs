@@ -10,6 +10,7 @@ namespace EqualsMethod
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("People class Example");
             People P1 = new People();
             P1.FirstName = "Simon";
             P1.LastName = "Tan";
@@ -22,7 +23,7 @@ namespace EqualsMethod
             Console.WriteLine(P1.Equals(P2));
 
             Console.WriteLine("hashcode p1: " + P1.GetHashCode());
-            Console.WriteLine("hashcode p2: "+ P2.GetHashCode());
+            Console.WriteLine("hashcode p2: " + P2.GetHashCode());
 
             People P3 = new People();
             P3.FirstName = "Dan";
@@ -38,6 +39,36 @@ namespace EqualsMethod
             P5.FirstName = "AB";
             P5.LastName = "BC";
             Console.WriteLine("hashcode P5: " + P5.GetHashCode());
+            Console.WriteLine();
+
+            Console.WriteLine("CLR VIA Class example");
+            User usr1 = new User();
+            usr1.Login = "Dave123";
+            usr1.ID = 100;
+
+            User usr2 = new User();
+            usr2.Login = "Mustain51";
+            usr2.ID = 110;
+
+            User usr3 = new User();
+            usr3.Login = "Dave123";
+            usr3.ID = 100;
+
+            User usr4 = new User();
+            usr4 = usr2;
+
+            Console.WriteLine(usr1);
+            Console.WriteLine(usr3);
+            Console.WriteLine("usr1 == usr3? : "+(usr1 == usr3));
+            Console.WriteLine("usr1 Equals usr3? : " + (usr1.Equals(usr3)));
+            Console.WriteLine("usr1 RefEq usr3?: " + object.ReferenceEquals(usr1,usr3) + " - значения одинаковые, но место в памяти разное");
+            Console.WriteLine();
+
+            Console.WriteLine(usr2);
+            Console.WriteLine(usr4);
+            Console.WriteLine("usr2 == usr4? : " + (usr1 == usr3));
+            Console.WriteLine("usr2 Equals usr4? : " + (usr2.Equals(usr4)));
+            Console.WriteLine("usr2 RefEq usr4?: " + object.ReferenceEquals(usr2, usr4) + " - ссылаются на одно место");
 
 
             Console.ReadLine();
@@ -51,12 +82,12 @@ namespace EqualsMethod
 
         public override bool Equals(object obj)
         {
-            if(obj == null)
+            if (obj == null)
             {
                 return false;
             }
             // если obj не People
-            if(!(obj is People))
+            if (!(obj is People))
             {
                 return false;
             }
@@ -68,6 +99,31 @@ namespace EqualsMethod
         public override int GetHashCode()
         {
             return this.FirstName.GetHashCode() ^ this.LastName.GetHashCode();
+        }
+    }
+
+    public class User
+    {
+        public string Login { get; set; }
+        public int ID;
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null) return false;
+            if (!(obj is User)) return false;
+            if (obj.GetType() != this.GetType()) return false;
+
+            return this.Login == ((User)obj).Login && this.ID == ((User)obj).ID;
+        }
+
+        public override int GetHashCode()
+        {
+            return Login.GetHashCode() ^ ID.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return this.Login + " | " + this.ID;
         }
     }
 }
