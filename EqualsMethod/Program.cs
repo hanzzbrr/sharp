@@ -54,8 +54,10 @@ namespace EqualsMethod
             usr3.Login = "Dave123";
             usr3.ID = 100;
 
+
             User usr4 = new User();
-            usr4 = usr2;
+            if(usr2 is User)
+                usr4 = usr2;
 
             Console.WriteLine(usr1);
             Console.WriteLine(usr3);
@@ -69,6 +71,16 @@ namespace EqualsMethod
             Console.WriteLine("usr2 == usr4? : " + (usr1 == usr3));
             Console.WriteLine("usr2 Equals usr4? : " + (usr2.Equals(usr4)));
             Console.WriteLine("usr2 RefEq usr4?: " + object.ReferenceEquals(usr2, usr4) + " - ссылаются на одно место");
+
+            Admin adm1 = new Admin();
+            adm1.Login = "Sonic";
+            adm1.ID = 501;
+            adm1.status = Admin.Status.Master;
+            User usr5 = new User();
+            usr5 = (User)(adm1 as User);
+
+            Console.WriteLine(adm1 + " | " + adm1.GetType().ToString());
+            Console.WriteLine(usr5 + " | " + usr5.GetType().ToString()); //почему usr5 выполняет ToString() производного класса Admin???
 
 
             Console.ReadLine();
@@ -124,6 +136,30 @@ namespace EqualsMethod
         public override string ToString()
         {
             return this.Login + " | " + this.ID;
+        }
+    }
+
+    public class Admin : User
+    {
+        public enum Status {Odmen, Master }
+        public Status status;
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null) return false;
+            if (!(obj is User)) return false;
+            if (obj.GetType() != this.GetType()) return false;
+
+            return this.Login == ((User)obj).Login && this.ID == ((User)obj).ID && this.status == ((Admin)obj).status;
+        }
+        public override string ToString()
+        {
+            return base.ToString() + " | " + status.ToString();
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode() ^ this.status.GetHashCode();
         }
     }
 }
