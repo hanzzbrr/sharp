@@ -12,9 +12,9 @@ using System.Threading;
 namespace WinForms
 {
     //Form functionality here
-    public partial class Form1 : Form
+    public partial class DestroyLabelsForm : Form
     {
-        public Form1()
+        public DestroyLabelsForm()
         {
             InitializeComponent();
         }
@@ -28,9 +28,7 @@ namespace WinForms
         {
             DestroyLabels();
         }
-    }
-    public partial class Form1 : Form
-    {
+
         private void CreateLabels()
         {
             for (int i = 0; i < 5; i++)

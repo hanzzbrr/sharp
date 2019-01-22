@@ -1,6 +1,6 @@
 ﻿namespace WinForms
 {
-    partial class Form1
+    partial class DestroyLabelsForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.

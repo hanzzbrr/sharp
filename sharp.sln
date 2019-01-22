@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTableSimple", "HashTabl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualsMethod", "EqualsMethod\EqualsMethod.csproj", "{0035B4EC-93C7-4CB7-97A3-C74F91D18977}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutAlphabetedList", "OutAlphabetedList\OutAlphabetedList.csproj", "{01C8BAE6-A1D7-442A-95DC-19ADC35674A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operators", "Operators\Operators.csproj", "{5F9B61CC-7A3A-4A1B-9359-02F5FBA63FDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{0035B4EC-93C7-4CB7-97A3-C74F91D18977}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0035B4EC-93C7-4CB7-97A3-C74F91D18977}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0035B4EC-93C7-4CB7-97A3-C74F91D18977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01C8BAE6-A1D7-442A-95DC-19ADC35674A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01C8BAE6-A1D7-442A-95DC-19ADC35674A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01C8BAE6-A1D7-442A-95DC-19ADC35674A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01C8BAE6-A1D7-442A-95DC-19ADC35674A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F9B61CC-7A3A-4A1B-9359-02F5FBA63FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F9B61CC-7A3A-4A1B-9359-02F5FBA63FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F9B61CC-7A3A-4A1B-9359-02F5FBA63FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F9B61CC-7A3A-4A1B-9359-02F5FBA63FDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
