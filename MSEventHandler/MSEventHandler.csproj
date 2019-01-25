@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{133E0370-300A-45E0-BFCE-A54F9060E023}</ProjectGuid>
+    <ProjectGuid>{1C501868-2B3D-472B-8E09-FB52B6FFDA7B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CLREvents</RootNamespace>
-    <AssemblyName>CLREvents</AssemblyName>
+    <RootNamespace>MSEventHandler</RootNamespace>
+    <AssemblyName>MSEventHandler</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Example\NewPackEventArgs.cs" />
-    <Compile Include="Example\PostManager.cs" />
-    <Compile Include="Example\PostService.cs" />
-    <Compile Include="Fax.cs" />
-    <Compile Include="MailManager.cs" />
-    <Compile Include="NewMailEventArgs.cs" />
-    <Compile Include="Pager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

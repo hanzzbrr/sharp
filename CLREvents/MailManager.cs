@@ -9,19 +9,22 @@ namespace CLREvents
 {
     internal class MailManager
     {
-        public event EventHandler<NewMailEventArgs> NewMail;
-
+        //EventHandler<>является делегатом
+        public event EventHandler<NewMailEventArgs> NewMail; //событие поддерживаемое данным классом
+        
+        //
         protected virtual void OnNewMail(NewMailEventArgs e)
         {
-            EventHandler<NewMailEventArgs> temp = Volatile.Read(ref NewMail);
+            EventHandler<NewMailEventArgs> temp = Volatile.Read(ref NewMail); //что-то там с потоками
 
             if (temp != null) temp(this, e);
         }
 
         public void SimulateNewMail(string from, string to, string subject)
         {
+            //создание объекта, хранящего информацию, которую нужно передать получателям
             NewMailEventArgs e = new NewMailEventArgs(from, to, subject);
-            OnNewMail(e);
+            OnNewMail(e);   //генерация события
         }
     }
 }
