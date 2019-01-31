@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListSort", "ListSort\ListSort.csproj", "{555AF585-249A-4AE7-88E0-100291E8EA60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms", "WinForms\WinForms.csproj", "{976DBB25-60A5-4997-A151-E9681AFC1613}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLRRefAndValTypes", "CLRRefAndValTypes\CLRRefAndValTypes.csproj", "{3D6C2082-2001-495D-A834-CC9575558D4A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTableSimple", "HashTableSimple\HashTableSimple.csproj", "{9588EAF3-59E0-4C51-BE63-5A61A745C60E}"
@@ -21,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLREvents", "CLREvents\CLRE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSEventHandler", "MSEventHandler\MSEventHandler.csproj", "{1C501868-2B3D-472B-8E09-FB52B6FFDA7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsDictionaryAndDate", "WinFormsDictionaryAndDate\WinFormsDictionaryAndDate.csproj", "{00A561E6-290C-4A83-BAF9-96EEB2216591}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictDayTime", "DictDayTime\DictDayTime.csproj", "{F6EC11B5-19C2-4AF7-8289-37DA33F50209}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,10 +33,6 @@ Global
 		{555AF585-249A-4AE7-88E0-100291E8EA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{555AF585-249A-4AE7-88E0-100291E8EA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{555AF585-249A-4AE7-88E0-100291E8EA60}.Release|Any CPU.Build.0 = Release|Any CPU
-		{976DBB25-60A5-4997-A151-E9681AFC1613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{976DBB25-60A5-4997-A151-E9681AFC1613}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{976DBB25-60A5-4997-A151-E9681AFC1613}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{976DBB25-60A5-4997-A151-E9681AFC1613}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3D6C2082-2001-495D-A834-CC9575558D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3D6C2082-2001-495D-A834-CC9575558D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D6C2082-2001-495D-A834-CC9575558D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -63,6 +61,14 @@ Global
 		{1C501868-2B3D-472B-8E09-FB52B6FFDA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C501868-2B3D-472B-8E09-FB52B6FFDA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C501868-2B3D-472B-8E09-FB52B6FFDA7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00A561E6-290C-4A83-BAF9-96EEB2216591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00A561E6-290C-4A83-BAF9-96EEB2216591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00A561E6-290C-4A83-BAF9-96EEB2216591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00A561E6-290C-4A83-BAF9-96EEB2216591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6EC11B5-19C2-4AF7-8289-37DA33F50209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6EC11B5-19C2-4AF7-8289-37DA33F50209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6EC11B5-19C2-4AF7-8289-37DA33F50209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6EC11B5-19C2-4AF7-8289-37DA33F50209}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

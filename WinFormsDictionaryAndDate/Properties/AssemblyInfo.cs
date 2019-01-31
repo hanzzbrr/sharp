@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("WinForms")]
+[assembly: AssemblyTitle("WinFormsDictionaryAndDate")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("WinForms")]
+[assembly: AssemblyProduct("WinFormsDictionaryAndDate")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("976dbb25-60a5-4997-a151-e9681afc1613")]
+[assembly: Guid("00a561e6-290c-4a83-baf9-96eeb2216591")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //

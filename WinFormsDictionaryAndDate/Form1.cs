@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinForms
+namespace WinFormsDictionaryAndDate
 {
-    public partial class OutAlphabetForm : Form
+    public partial class Form1 : Form
     {
-        public OutAlphabetForm()
+        public Form1()
         {
             InitializeComponent();
         }
