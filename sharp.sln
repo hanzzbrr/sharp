@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsDictionaryAndDate",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictDayTime", "DictDayTime\DictDayTime.csproj", "{F6EC11B5-19C2-4AF7-8289-37DA33F50209}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns_Strategy", "Patterns_Strategy\Patterns_Strategy.csproj", "{8F9AB833-7A86-45C8-ACF2-6D2C2E354BCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{F6EC11B5-19C2-4AF7-8289-37DA33F50209}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6EC11B5-19C2-4AF7-8289-37DA33F50209}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6EC11B5-19C2-4AF7-8289-37DA33F50209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F9AB833-7A86-45C8-ACF2-6D2C2E354BCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F9AB833-7A86-45C8-ACF2-6D2C2E354BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F9AB833-7A86-45C8-ACF2-6D2C2E354BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F9AB833-7A86-45C8-ACF2-6D2C2E354BCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
