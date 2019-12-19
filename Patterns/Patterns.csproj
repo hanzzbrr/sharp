@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8F9AB833-7A86-45C8-ACF2-6D2C2E354BCC}</ProjectGuid>
+    <ProjectGuid>{0840A3E5-AA14-4684-BAAC-3C95D8BBE14A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Patterns_Strategy</RootNamespace>
-    <AssemblyName>Patterns_Strategy</AssemblyName>
+    <RootNamespace>Patterns</RootNamespace>
+    <AssemblyName>Patterns</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

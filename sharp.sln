@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictDayTime", "DictDayTime\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns_Strategy", "Patterns_Strategy\Patterns_Strategy.csproj", "{8F9AB833-7A86-45C8-ACF2-6D2C2E354BCC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns", "Patterns\Patterns.csproj", "{0840A3E5-AA14-4684-BAAC-3C95D8BBE14A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{8F9AB833-7A86-45C8-ACF2-6D2C2E354BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F9AB833-7A86-45C8-ACF2-6D2C2E354BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F9AB833-7A86-45C8-ACF2-6D2C2E354BCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0840A3E5-AA14-4684-BAAC-3C95D8BBE14A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0840A3E5-AA14-4684-BAAC-3C95D8BBE14A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0840A3E5-AA14-4684-BAAC-3C95D8BBE14A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0840A3E5-AA14-4684-BAAC-3C95D8BBE14A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
