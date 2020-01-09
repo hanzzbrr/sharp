@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WPF" Height="360" Width="640">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Save Data"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Run">
+                <MenuItem Header="Initialization"></MenuItem>
+                <MenuItem Header="Run"></MenuItem>
+                <MenuItem Header="Terminate"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="2" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"></RowDefinition>
+                    <RowDefinition Height="125"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <ComboBox x:Name="comboBoxObjects" Grid.Row="0" SelectionChanged="comboBoxObjects_SelectionChanged"></ComboBox>
+                <TextBlock x:Name="cbText" Grid.Row="1"></TextBlock>
+                <GridSplitter Grid.Row="2" Background="LightGray" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="5" Name="spliiter2"></GridSplitter>
+            </Grid>
+            <GridSplitter Grid.Column="1" Background="LightGray" HorizontalAlignment="Center" VerticalAlignment="Stretch" Width="5" Name="splitter1"></GridSplitter>
+        </Grid>
+    </DockPanel>
+</Window>
