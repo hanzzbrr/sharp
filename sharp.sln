@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListSort", "ListSort\ListSort.csproj", "{555AF585-249A-4AE7-88E0-100291E8EA60}"
 EndProject
@@ -42,6 +42,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumeratorNumerable", "IEnumeratorNumerable\IEnumeratorNumerable.csproj", "{B032A78D-E792-4E49-BEDC-B6D5D5FB6370}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLRThreading", "CLRThreading\CLRThreading.csproj", "{4084E097-C038-4041-B241-D78430F0690E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{8B4693A3-6658-477D-A926-E77B39B24D15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{4084E097-C038-4041-B241-D78430F0690E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4084E097-C038-4041-B241-D78430F0690E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4084E097-C038-4041-B241-D78430F0690E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B4693A3-6658-477D-A926-E77B39B24D15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B4693A3-6658-477D-A926-E77B39B24D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B4693A3-6658-477D-A926-E77B39B24D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B4693A3-6658-477D-A926-E77B39B24D15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
