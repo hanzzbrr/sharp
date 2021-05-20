@@ -1,0 +1,362 @@
+{
+    "items": {
+        "collection": {
+          "caption": {
+            "ru": "Коллекция",
+            "en": "Collection"
+          },
+          "values": {
+            "andersson": {
+              "caption": {
+                "ru": "Андерссон",
+                "en": "Andersson"
+              }
+            },
+            "brixtori": {
+              "caption": {
+                "ru": "Брикстори",
+                "en": "Brixtori"
+              }
+            },
+            "vintage_wood": {
+              "caption": {
+                "ru": "Винтаж Вуд",
+                "en": "Vintage wood"
+              }
+            },
+            "hexacement": {
+              "caption": {
+                "ru": "Гексацемент",
+                "en": "Hexacement"
+              }
+            },
+            "diamante": {
+              "caption": {
+                "ru": "Диаманте",
+                "en": "Diamante"
+              }
+            },
+            "ipanema": {
+              "caption": {
+                "ru": "Ипанема",
+                "en": "Ipanema"
+              }
+            },
+            "nutwood": {
+              "caption": {
+                "ru": "Натвуд",
+                "en": "Nutwood"
+              }
+            },
+            "sten": {
+              "caption": {
+                "ru": "Стен",
+                "en": "Sten"
+              }
+            },
+            "tavern": {
+              "caption": {
+                "ru": "Таверна",
+                "en": "Tavern"
+              }
+            },
+            "titanium": {
+              "caption": {
+                "ru": "Титан",
+                "en": "Titan"
+              }
+            },
+            "spitsbergen": {
+              "caption": {
+                "ru": "Шпицберген",
+                "en": "Spitsbergen"
+              }
+            },
+            "shadow": {
+              "caption": {
+                "ru": "Шэдоу",
+                "en": "Shadow"
+              }
+            },
+            "eventir": {
+              "caption": {
+                "ru": "Эвентир",
+                "en": "Eventir"
+              }
+            }
+          }
+        },
+        "type": {
+          "caption": {
+            "ru": "ТИП ПОМЕЩЕНИЯ",
+            "en": "ROOM TYPE"
+          },
+          "values": {
+            "balcony": {
+              "caption": {
+                "ru": "балкон",
+                "en": "balcony"
+              }
+            },
+            "large_bathroom": {
+              "caption": {
+                "ru": "большая ванная",
+                "en": "large bathroom"
+              }
+            },
+            "cafe": {
+              "caption": {
+                "ru": "кафе",
+                "en": "cafe"
+              }
+            },
+            "kitchen": {
+              "caption": {
+                "ru": "кухня",
+                "en": "kitchen"
+              }
+            },
+            "small_bathroom": {
+              "caption": {
+                "ru": "маленькая ванная",
+                "en": "small bathroom"
+              }
+            },
+            "hallway": {
+              "caption": {
+                "ru": "прихожая",
+                "en": "hallway"
+              }
+            },
+            "restroom": {
+              "caption": {
+                "ru": "туалет",
+                "en": "restroom"
+              }
+            }
+          }
+        },
+        "ttype": {
+          "caption": {
+            "ru": "ТЕКСТУРА",
+            "en": "TEXTURE"
+          },
+          "values": {
+            "wood": {
+              "caption": {
+                "ru": "дерево",
+                "en": "wood"
+              }
+            },
+            "stone": {
+              "caption": {
+                "ru": "камень",
+                "en": "stone"
+              }
+            },
+            "brick": {
+              "caption": {
+                "ru": "кирпич",
+                "en": "brick"
+              }
+            },
+            "mix": {
+              "caption": {
+                "ru": "микс",
+                "en": "mix"
+              }
+            },
+            "textile": {
+              "caption": {
+                "ru": "текстиль",
+                "en": "textile"
+              }
+            },
+            "cement": {
+              "caption": {
+                "ru": "цемент",
+                "en": "cement"
+              }
+            }
+          }
+        },
+        "stype": {
+          "caption": {
+            "ru": "ПОВЕРХНОСТЬ",
+            "en": "SURFACE"
+          },
+          "values": {
+            "glossy": {
+              "caption": {
+                "ru": "глянцевая",
+                "en": "glossy"
+              }
+            },
+            "matte": {
+              "caption": {
+                "ru": "матовая",
+                "en": "matte"
+              }
+            },
+            "flat": {
+              "caption": {
+                "ru": "плоская",
+                "en": "flat"
+              }
+            },
+            "embossed": {
+              "caption": {
+                "ru": "рельефная",
+                "en": "embossed"
+              }
+            }
+          }
+        },
+        "color": {
+          "caption": {
+            "ru": "ЦВЕТ",
+            "en": "COLOR"
+          },
+          "values": {
+            "beige": {
+              "caption": {
+                "ru": "бежевый",
+                "en": "beige"
+              }
+            },
+            "white": {
+              "caption": {
+                "ru": "белый",
+                "en": "white"
+              }
+            },
+            "turquoise": {
+              "caption": {
+                "ru": "бирюзовый",
+                "en": "turquoise"
+              }
+            },
+            "blue": {
+              "caption": {
+                "ru": "голубой",
+                "en": "blue"
+              }
+            },
+            "brown": {
+              "caption": {
+                "ru": "коричневый",
+                "en": "brown"
+              }
+            },
+            "gray": {
+              "caption": {
+                "ru": "серый",
+                "en": "gray"
+              }
+            },
+            "black": {
+              "caption": {
+                "ru": "черный",
+                "en": "black"
+              }
+            }
+          }
+        },
+        "style": {
+          "caption": {
+            "ru": "СТИЛЬ",
+            "en": "STYLE"
+          },
+          "values": {
+            "classical": {
+              "caption": {
+                "ru": "Классический",
+                "en": "Classical"
+              }
+            },
+            "contemporary": {
+              "caption": {
+                "ru": "Контемпорари",
+                "en": "Contemporary"
+              }
+            },
+            "loft": {
+              "caption": {
+                "ru": "Лофт",
+                "en": "Loft"
+              }
+            },
+            "minimalism": {
+              "caption": {
+                "ru": "Минимализм",
+                "en": "Minimalism"
+              }
+            },
+            "provence": {
+              "caption": {
+                "ru": "Прованс",
+                "en": "Provence"
+              }
+            },
+            "scandinavian": {
+              "caption": {
+                "ru": "Скандинавский",
+                "en": "Scandinavian"
+              }
+            },
+            "mediterranean": {
+              "caption": {
+                "ru": "Средиземноморский",
+                "en": "Mediterranean"
+              }
+            },
+            "chalet": {
+              "caption": {
+                "ru": "Шале",
+                "en": "Chalet"
+              }
+            }
+          }
+        },
+        "manufacturer": {
+          "caption": {
+            "ru": "Производитель",
+            "en": "Manufacturer"
+          },
+          "values": {
+            "Lasselsberger": {
+              "caption": {
+                "ru": "Lasselsberger",
+                "en": "Lasselsberger"
+              }
+            }
+          }
+        },
+        "size": {
+          "caption": {
+            "ru": "РАЗМЕР",
+            "en": "SIZE"
+          },
+          "values": {
+            "big": {
+              "caption": {
+                "ru": "Большое",
+                "en": "Big"
+              }
+            },
+            "small": {
+              "caption": {
+                "ru": "Маленькое",
+                "en": "Small"
+              }
+            },
+            "toilet": {
+              "caption": {
+                "ru": "Туалет",
+                "en": "Toilet"
+              }
+            }
+          }
+        }
+      }
+}
