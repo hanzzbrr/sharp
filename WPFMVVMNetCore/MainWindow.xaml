@@ -1,0 +1,33 @@
+﻿<Window x:Class="WPFMVVMNetCore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFMVVMNetCore"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ListView Name="UserGrid" Grid.Row="1" Margin="4,178,12,13"  ItemsSource="{Binding Users}"  >
+            <ListView.View>
+                <GridView x:Name="grdTest">
+                    <GridViewColumn Header="UserId" DisplayMemberBinding="{Binding UserId}"  Width="50"/>
+                    <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}"  Width="80" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <TextBox Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="80,7,0,0" Name="txtUserId" VerticalAlignment="Top" Width="178" Text="{Binding ElementName=UserGrid,Path=SelectedItem.UserId}" />
+        <TextBox Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="80,35,0,0" Name="txtFirstName" VerticalAlignment="Top" Width="178" Text="{Binding ElementName=UserGrid,Path=SelectedItem.FirstName}" />
+        <Label Content="UserId" Grid.Row="1" HorizontalAlignment="Left" Margin="12,12,0,274" Name="label1" />
+        <Label Content="First Name" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="12,35,0,0" Name="label3" VerticalAlignment="Top" />
+        <Button Content="Update" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="310,40,0,0" Name="btnUpdate"   
+                VerticalAlignment="Top" Width="141"  
+                Command="{Binding Path=UpdateCommad}"  />
+    </Grid>
+</Window>
