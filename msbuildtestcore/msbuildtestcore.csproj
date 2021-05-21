@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
+	<Target Name="HelloWorld">
+		<Message Text="Configuration is $(Configuration)" />
+		<Message Text="MSBuildToolsPath is $(MSBuildToolsPath)" />
+		<Message Text="Compile item type contains @(Compile)" />
+	</Target>
+
+	<ItemGroup>
+		<Compile Include="Program.cs" />
+		<Compile Include="Properties\AssemblyInfo.cs" />
+	</ItemGroup>
+</Project>
