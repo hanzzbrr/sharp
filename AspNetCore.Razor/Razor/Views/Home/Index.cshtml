@@ -1,0 +1,62 @@
+﻿@model Product[]
+@{
+    ViewBag.Title = "Product Name";
+}
+@{ 
+    var quote = "This is another quote";
+}
+
+<div>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Price</th></tr>
+        </thead>
+        <tbody>
+            @foreach (Product p in Model)
+            {
+                <tr>
+                    <td>@p.Name</td>
+                    <td>@($"{p.Price:C2}")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<br />
+<div>
+    <p>@DateTime.Now</p>
+    <p>@quote</p>
+</div>
+@{ 
+    void RenderName(string name)
+    {
+        <p>Name: <strong>@name</strong></p>
+    }
+    RenderName("MahatmaGandi");
+    RenderName("JohnSnow");
+}
+
+
+<div>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Price</th></tr>
+        </thead>
+        <tbody>
+            @for(var i=0; i< 4; i++)
+            {
+                var person = "person"+i;
+                <text>Name: @Model[0].Price</text>
+            }
+        </tbody>
+    </table>
+</div>
+
+@using (Html.BeginForm())
+{
+    <div>
+        Email: <input type="email" id="Email" value="" />
+        <button>Register</button>
+    </div>
+}
+
