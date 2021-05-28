@@ -83,7 +83,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wpf.Animation", "Wpf.Animat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET.LinkedList", "NET.LinkedList\NET.LinkedList.csproj", "{3396F1BC-692D-4D2A-BCA3-C582563297DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.Animation1", "Wpf.Animation1\Wpf.Animation1.csproj", "{B4997856-5C76-4CC6-9DA6-EB0BF99B5ACD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wpf.Animation1", "Wpf.Animation1\Wpf.Animation1.csproj", "{B4997856-5C76-4CC6-9DA6-EB0BF99B5ACD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.Presentation", "Wpf.Presentation\Wpf.Presentation.csproj", "{74FB600B-9396-4142-9849-A6EA6298FAA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.CustomersDemo", "Wpf.CustomersDemo\Wpf.CustomersDemo.csproj", "{038365DA-5B29-4A2F-8C5B-117185DD8EF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -255,6 +259,14 @@ Global
 		{B4997856-5C76-4CC6-9DA6-EB0BF99B5ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4997856-5C76-4CC6-9DA6-EB0BF99B5ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4997856-5C76-4CC6-9DA6-EB0BF99B5ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FB600B-9396-4142-9849-A6EA6298FAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FB600B-9396-4142-9849-A6EA6298FAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FB600B-9396-4142-9849-A6EA6298FAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FB600B-9396-4142-9849-A6EA6298FAA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{038365DA-5B29-4A2F-8C5B-117185DD8EF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{038365DA-5B29-4A2F-8C5B-117185DD8EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{038365DA-5B29-4A2F-8C5B-117185DD8EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{038365DA-5B29-4A2F-8C5B-117185DD8EF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
