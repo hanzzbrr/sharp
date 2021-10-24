@@ -1,0 +1,40 @@
+﻿<Window x:Class="WPFMacDonaldCommands.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFMacDonaldCommands"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.CommandBindings>
+        <!--мы указали Executed для уже определенной комманды New-->
+        <CommandBinding Command="ApplicationCommands.New" Executed="NewCommand_Executed"></CommandBinding>
+        <CommandBinding Command="ApplicationCommands.Save" Executed="SaveCommand_Executed" CanExecute="SaveCommand_CanExecute"/>
+        <CommandBinding Command="local:DataCommands.Requery" Executed="RequeryCommand_Executed"></CommandBinding>
+    </Window.CommandBindings>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <!--и теперь можем обращаться непосредственно к New-->
+                <MenuItem  Command="ApplicationCommands.New"/>
+                <MenuItem Command="ApplicationCommands.Save"/>
+                <MenuItem Command="local:DataCommands.Requery"/>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Command="Cut"/>
+                <MenuItem Command="Copy"/>
+                <MenuItem Command="Paste"/>
+            </MenuItem>
+        </Menu>
+        <ToolBar DockPanel.Dock="Top">
+            <Button Command="New">New</Button>
+            <Button Command="Save">Save</Button>
+            <Separator></Separator>
+            <Button Command="Cut">Cut</Button>
+            <Button Command="Copy">Copy</Button>
+            <Button Command="Paste">Paste</Button>
+            
+        </ToolBar>
+        <TextBox x:Name="textBox" TextWrapping="Wrap" TextChanged="textBox_TextChanged"/>
+    </DockPanel>
+</Window>
