@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Combinations
 {
@@ -15,16 +16,24 @@ namespace Combinations
         /// <param name="r">Size of combination</param>
         static void GetCombinations<T>(T []arr, T []data,
                                     int start, int end,
-                                    int index, int r)
+                                    int index, int r, ref List<T []> combinations)
         {
             // Current combination is
             // ready to be printed,
             // print it
             if (index == r)
             {
-                for (int j = 0; j < r; j++)
-                    Console.Write(data[j] + " ");
-                Console.WriteLine("");
+                
+                // for (int j = 0; j < r; j++)
+                // {
+                //     Console.Write( j.ToString()+ ' '+ data[j] + ' ');
+                // }
+
+                // Console.WriteLine("");
+
+                T [] comb = new T [r];
+                data.CopyTo(comb, 0);
+                combinations.Add(comb);
                 return;
             }
     
@@ -41,7 +50,7 @@ namespace Combinations
             {
                 data[index] = arr[i];
                 GetCombinations(arr, data, i + 1,
-                                end, index + 1, r);
+                                end, index + 1, r, ref combinations);
             }
         }
  
@@ -50,7 +59,7 @@ namespace Combinations
         // in arr[] of size n. This
         // function mainly uses combinationUtil()
         static void PrintCombination<T>(T []arr,
-                                    int n, int r)
+                                    int n, int r, ref List<T []> combinations)
         {
             // A temporary array to store
             // all combination one by one
@@ -59,14 +68,27 @@ namespace Combinations
             // Print all combination
             // using temporary array 'data[]'
             GetCombinations(arr: arr, data: data, start:0,
-                            end: n - 1, index: 0, r: r);
+                            end: n - 1, index: 0, r: r, 
+                            combinations: ref combinations);
+            Console.WriteLine(combinations.Count);
         }
         static void Main(string[] args)
         {
             string []arr = {"single", "fox", "from", "another", "box"};
-            int r = 2;
+            int r = 3;
             int n = arr.Length;
-            PrintCombination<string>(arr, n, r);
+            var combinations = new List<string []>();
+
+            PrintCombination<string>(arr, n, r, ref combinations);
+
+            foreach(var combination in combinations)
+            {
+                foreach(var word in combination)
+                {
+                    Console.Write(word + ' ');
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
