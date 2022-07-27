@@ -13,7 +13,7 @@ namespace Combinations
         /// <param name="end">End index of arr</param>
         /// <param name="index">Current index in data</param>
         /// <param name="r">Size of combination</param>
-        static void GetCombinations(int []arr, int []data,
+        static void GetCombinations<T>(T []arr, T []data,
                                     int start, int end,
                                     int index, int r)
         {
@@ -49,12 +49,12 @@ namespace Combinations
         // all combinations of size r
         // in arr[] of size n. This
         // function mainly uses combinationUtil()
-        static void PrintCombination(int []arr,
+        static void PrintCombination<T>(T []arr,
                                     int n, int r)
         {
             // A temporary array to store
             // all combination one by one
-            int []data = new int[r];
+            T []data = new T[r];
     
             // Print all combination
             // using temporary array 'data[]'
@@ -63,10 +63,10 @@ namespace Combinations
         }
         static void Main(string[] args)
         {
-            int []arr = {1, 2, 3, 4, 5};
+            string []arr = {"single", "fox", "from", "another", "box"};
             int r = 2;
             int n = arr.Length;
-            PrintCombination(arr, n, r);
+            PrintCombination<string>(arr, n, r);
         }
     }
 }
