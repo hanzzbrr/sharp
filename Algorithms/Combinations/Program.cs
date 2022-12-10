@@ -58,9 +58,10 @@ namespace Combinations
         // all combinations of size r
         // in arr[] of size n. This
         // function mainly uses combinationUtil()
-        static void PrintCombination<T>(T []arr,
-                                    int n, int r, ref List<T []> combinations)
+        static void PrintCombination<T>(T []arr, ref List<T []> combinations)
         {
+            int r = arr.Length - 1;
+            int n = arr.Length;
             // A temporary array to store
             // all combination one by one
             T []data = new T[r];
@@ -70,16 +71,14 @@ namespace Combinations
             GetCombinations(arr: arr, data: data, start:0,
                             end: n - 1, index: 0, r: r, 
                             combinations: ref combinations);
-            Console.WriteLine(combinations.Count);
         }
         static void Main(string[] args)
         {
             string []arr = {"single", "fox", "from", "another", "box"};
-            int r = 3;
-            int n = arr.Length;
+
             var combinations = new List<string []>();
 
-            PrintCombination<string>(arr, n, r, ref combinations);
+            PrintCombination<string>(arr, ref combinations);
 
             foreach(var combination in combinations)
             {
