@@ -1,0 +1,5 @@
+enum Product
+{
+    ProductA,
+    ProductB
+}
