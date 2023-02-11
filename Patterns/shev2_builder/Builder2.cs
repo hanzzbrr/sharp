@@ -1,21 +1,20 @@
-class Builder1 : IBuilder
+class Builder2 : IBuilder
 {
-    string style = "abstract";
+    string style = "Stone";
     Product product = new Product();
-
     public void BuildPartA()
     {
-        product.Add("Part A " + style);
+        product.Add(style + " part A");
     }
 
     public void BuildPartB()
     {
-        product.Add("Part B " + style);
+        product.Add(style + " part B");
     }
 
     public void BuildPartC()
     {
-        product.Add("Part C " + style);
+        product.Add(style + " part C");
     }
 
     public Product GetResult()
