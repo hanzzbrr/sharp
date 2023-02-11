@@ -3,18 +3,20 @@
     public static void Main(string[] args)
     {
         Prototype prototype = null;
-        Prototype clone = null;
+        List<Prototype> clones = new List<Prototype>();
 
-        prototype = new ConcretePrototype1(1, "Concrete");
-        clone = prototype.Clone();
+        prototype = new ConcretePrototype1("Concrete");
+        clones.Add(prototype.Clone());
+        clones.Add(prototype.Clone());
+        clones.Add(prototype.Clone());
+        prototype = new ConcretePrototype2("NotConcrete");
+        clones.Add(prototype.Clone());
+        clones.Add(prototype.Clone());
+        clones.Add(prototype.Clone());
 
-        System.Console.WriteLine($"Prototype is:\t {prototype.ToString()}");
-        System.Console.WriteLine($"Clone is:\t {clone.ToString()}");
-
-        prototype = new ConcretePrototype2(2, "NotConcrete");
-        clone = prototype.Clone();
-
-        System.Console.WriteLine($"Prototype is:\t {prototype.ToString()}");
-        System.Console.WriteLine($"Clone is:\t {clone.ToString()}");
+        foreach(var item in clones)
+        {
+            System.Console.WriteLine($"Clone is: {item.ToString()}");
+        }
     }
 }

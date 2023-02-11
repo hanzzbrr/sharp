@@ -1,11 +1,13 @@
 abstract class Prototype
 {
+    private static int IdCounter = 0;
     public int Id { get; private set; }
     public string Name { get; private set; }
 
-    public Prototype(int id, string name)
+    public Prototype(string name)
     {
-        this.Id = id;
+        IdCounter++;
+        Id = IdCounter;
         this.Name = name;
     }
 
