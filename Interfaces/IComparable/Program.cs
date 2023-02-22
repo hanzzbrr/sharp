@@ -55,6 +55,6 @@ class Car : IComparable
 
     public override string ToString()
     {
-        return $"{Name}: {TopSpeed}, {Weight}";
+        return $"{Name}: S: {TopSpeed}, W: {Weight}";
     }
 }
